@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+
+  database:
+    image: percona:8.0
+    environment:
+      - MYSQL_DATABASE=ecommerce_database
+      - MYSQL_USER=ecommerce
+      - MYSQL_PASSWORD=password
+      - MYSQL_ROOT_PASSWORD=password
+    ports:
+      - 3306:3306

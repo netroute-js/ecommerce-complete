@@ -1,0 +1,18 @@
+server.port: 8082
+
+spring:
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: update
+  application:
+    name: ecommerce
+  flyway:
+    enabled: false
+
+ecommerce:
+  database:
+    jdbc-url: jdbc:mysql://127.0.0.1:3306/ecommerce_database
+    username: ecommerce
+    password: password
